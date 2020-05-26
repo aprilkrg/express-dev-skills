@@ -24,7 +24,6 @@ app.use(methodOverride('_method'));
 
 app.use('/', indexRouter);
 app.use(function(req, res, next) {
-  console.log('server.js ln 27');
   req.time = new Date().toLocaleTimeString();
   next();
 });
